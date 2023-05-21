@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+
+  height: 757px;
+  width: 1000px;
+}
+#main {
+  height: 757px;
+  width: 1000px;
+}
+
+/* Navbar */
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.divider {
+  height: 1px;
+  background-color: #ddd;
+}
+
+#navbar-logo {
+  width: 40px;
+  height: 40px;
+}
+
+#navbar-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #3c4453;
+  font-weight: 600;
+}
+
+#navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+#notification-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #a1a7b1;
+}
+
+#avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+/* Filters */
+
+#filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+#filter-container {
+  display: flex;
+  align-items: center;
+}
+
+#filter-text {
+  margin: 0 1rem;
+  font-weight: bold;
+  font-size: large;
+}
+
+.filter-divider {
+  width: 1px;
+  height: 2rem;
+  background-color: #ccc;
+  margin-right: 1rem;
+}
+
+#filter-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.filter-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.filter-link.highlighted {
+  color: #8580e5;
+}
+
+#new-invoice-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #4e46dc;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Metrics */
+
+#metrics-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 1rem;
+  flex-grow: 1;
+}
+
+.metric-divider {
+  width: 1px;
+  height: 8rem;
+  background-color: #ddd;
+  margin-right: 1rem;
+}
+
+.metric:last-child {
+  margin-right: none;
+}
+
+.metric:first-child {
+  margin-left: 1rem;
+}
+
+.metric-name-growth {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #6d7380;
+  margin-bottom: 1rem;
+}
+
+/*
+.metric-name {
+}
+
+.metric-growth {
+}
+*/
+
+.metric-growth.significant {
+  color: #d14156;
+}
+
+.metric-amount {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #121826;
+}
+
+/* Recent Activity */
+
+#recent-activity {
+  margin-top: 20px;
+}
+
+.day-header {
+  background-image: linear-gradient(to right, #4e80ee, #3763e3);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  margin-bottom: 10px;
+}
+
+.transaction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-left: 1rem;
+}
+
+.transaction-left {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  flex: 2;
+}
+
+.transaction-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  fill: #a1a7b1;
+}
+
+.transaction-amount-head {
+  display: flex;
+}
+
+.transaction-amount {
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+.amount-subtext {
+  font-weight: 600;
+  font-size: small;
+  color: #848994;
+}
+
+.payment-status {
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.paid {
+  background-color: #f2fdf5;
+  border: 1px solid #408047;
+  color: #408047;
+}
+
+.withdraw {
+  background-color: #f9fafb;
+  border: 1px solid #eeeff1;
+  color: #5b626e;
+}
+
+.overdue {
+  background-color: #fcf2f2;
+  border: 1px solid #f8e7e7;
+  color: #b74c45;
+}
+
+.transaction-middle {
+  font-weight: 500;
+  font-size: small;
+  flex: 1;
+}
+
+.transaction-subtext {
+  color: #848994;
+}
+
+.transaction-right {
+  font-weight: 500;
+  font-size: small;
+  text-align: right;
+  margin-right: 1rem;
+  flex: 1;
+}
+
+.view-transaction {
+  color: blue;
+  text-decoration: none;
+}
+
+.invoice-number {
+  color: #444854;
+}
+
+.invoice-prefix {
+  color: #848994;
+}
